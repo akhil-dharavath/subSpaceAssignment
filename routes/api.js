@@ -10,8 +10,8 @@ router.get("/blog-stats", async (req, res) => {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        "x-hasura-admin-secret": req.header("x-hasura-admin-secret"),
-        // req.header("x-hasura-admin-secret"):"32qR4KmXOIpsGPQKMqEJHGJS27G5s7HdSKO3gdtQd2kv5e852SiYwWNfxkZOBuQ6";
+        // "x-hasura-admin-secret": req.header("x-hasura-admin-secret"),
+        "x-hasura-admin-secret":"32qR4KmXOIpsGPQKMqEJHGJS27G5s7HdSKO3gdtQd2kv5e852SiYwWNfxkZOBuQ6",
       },
     })
       .then((data) => data.json())
@@ -58,8 +58,8 @@ router.get("/blog-search", async (req, res) => {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        "x-hasura-admin-secret": req.header("x-hasura-admin-secret"),
-        // req.header("x-hasura-admin-secret"):"32qR4KmXOIpsGPQKMqEJHGJS27G5s7HdSKO3gdtQd2kv5e852SiYwWNfxkZOBuQ6";
+        // "x-hasura-admin-secret": req.header("x-hasura-admin-secret"),
+        "x-hasura-admin-secret":"32qR4KmXOIpsGPQKMqEJHGJS27G5s7HdSKO3gdtQd2kv5e852SiYwWNfxkZOBuQ6",
       },
     })
       .then((data) => data.json())
